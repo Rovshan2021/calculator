@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Nova+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calculator {
+    min-width: 273px;
+    min-height: 448px;
+    background: #373737;
+    box-shadow: 0px 10px 50px rgb(0 0 0 / 40%);
+    border-radius: 24px;
+    font-family: Nova Round;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
+input#screen {
+    text-align: end;
+    color: #F7B731;
+    padding: 17px;
+    font-size: 30px;
+    width: 233px;
+    height: 91px;
+    background-color: #191A1E;
+    border-radius: 24px 24px 10px 10px;
+    margin: 20px 20px 10px 20px;
+    outline: none;
+}
+.number {
+    box-shadow: 6px 6px 12px #0e0e0e, -4px -4px 10px rgb(95 94 94 / 25%);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 500px;
+}
+.numbers {
+    padding-top: 10px;
+}
+.equal {
+    margin-left: 10px;
+    border-radius: 50px;
+    border: none;
+    width: 44px;
+    height: 170px;
+    color: #20BF6B;
+}
+.clear {
+    font-size: 16px;
+    color: #eb3b5a;
+}
+.isare {
+    color: #2D98DA;
+}
+.number:hover {
+    background-color: white;
+    color: #373737;
+}
+.clear:hover {
+    color: #eb3b5a;
+}
+.isare:hover {
+    color: #2D98DA;
+}
+.equal:hover {
+    color: #20BF6B;
+}
+.arxafon {
+    background: #191A1E;
+    box-shadow: 6px 6px 12px #0e0e0e, -4px -4px 10px rgb(95 94 94 / 25%);
+    color: white;
+}
+#copyright{
+    position: absolute;
+    top: 550px;
+    font: 400 24px 'Georama', sans-serif;
+    letter-spacing: 0px;
+    line-height: 22px;
+    color: #555555;
+    left: -800px;
+    animation-name: copyright;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+#copyright a{
+    text-decoration: none;
+}
+@keyframes copyright{
+    from{
+        top: 550px;
+        left: -800px;
+    }
+    to{top: 550px;
+        left: 450px;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/9705d67357.js" crossorigin="anonymous"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <form class="calculator arxafon d-flex  align-items-center flex-column" name="calculator">
+        <input type="text" readonly="readonly" class="value" id="screen"/>
+        <div class="numbers d-flex flex-column">
+
+        
+            <div class="num1 d-flex justify-content-center">
+                <div class="number clear" onclick="temizle()"><i class="fas fa-trash-alt"></i></div>
+                <div class="number isare" onclick="gonder('/')">/</div>
+                <div class="number isare" onclick="gonder('*')">x</div>
+                <div class="number isare" onclick="gonder('-')">-</div>
+            </div>
+            <div class="num1 d-flex justify-content-center">
+                <div class="number" onclick="gonder(7)">7</div>
+                <div class="number" onclick="gonder(8)">8</div>
+                <div class="number" onclick="gonder(9)">9</div>
+                <div class="number isare" onclick="gonder('+')">+</div>
+            </div>
+            
+            <div class="alt d-flex justify-content-center">
+                <div class="bottom d-flex flex-column">
+                    <div class="num1 d-flex">
+                        <div class="number" onclick="gonder(4)">4</div>
+                        <div class="number" onclick="gonder(5)">5</div>
+                        <div class="number" onclick="gonder(6)">6</div>
+                    </div>
+                    <div class="num1 d-flex">
+                        <div class="number" onclick="gonder(1)">1</div>
+                        <div class="number" onclick="gonder(2)">2</div>
+                        <div class="number" onclick="gonder(3)">3</div>
+                    </div>
+                    <div class="num1 d-flex">
+                        <div class="number" onclick="gonder(0)">0</div>
+                        <div class="number" onclick="sil()"><i class="fas fa-backspace"></i></div>
+                        <div class="number" onclick="gonder('.')">.</div>
+                    </div>
+                </div>
+                <div class="num1">
+                    <div class="number equal" onclick="beraberdir()">=</div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="copyright">
+        Copyright © 2021 Hazırladı: <a href="https://www.facebook.com/rovshan.hesenli" target="_blank">Rovshan Hasanli</a>
+    </div>
+
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
